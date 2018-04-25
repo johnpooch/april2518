@@ -10,11 +10,18 @@
 
 <body>
     
-    <p id = "para"> This is my paragraph. </p>
+    <button onclick="lightOn()">Turn on the light</button>
+    <img src="img/bulboff.gif" id="bulbImage" width="100">
+    <h2 id="heading">Switch on the Light</h2>
+    <button onclick="lightOff()">Turn off the Light</button>
     
     <script>
-        let para = document.getElementById("para");
-        para.style.color = "red";
+        function lightOn() {
+            document.getElementById("bulbImage").src = "img/bulbon.gif";
+        }
+        function lightOff() {
+            document.getElementById("bulbImage").src = "img/bulboff.gif";
+        }
     </script>
     
 </body>
